@@ -45,7 +45,7 @@ class MainActivity : BaseActivity() {
             .map {
                 it.map {
                     MainAdapter.MainItem(
-                        1,
+                        MainAdapter.ITEM_TYPE_QUESTION_VIDEO_VOTING,
                         it
                     )
                 }

@@ -6,7 +6,7 @@ import com.chad.library.adapter.base.entity.MultiItemEntity
 
 class MainAdapter : BaseMultiItemQuickAdapter<MultiItemEntity, BaseViewHolder>(null) {
     init {
-        addItemType(ITEM_TYPE_QUESTION_VIDEO_VOTING, R.layout.item_qa_video_voting)
+        addItemType(ITEM_TYPE_QUESTION_VIDEO_VOTING, R.layout.item_main)
     }
 
     override fun convert(helper: BaseViewHolder?, item: MultiItemEntity?) {
