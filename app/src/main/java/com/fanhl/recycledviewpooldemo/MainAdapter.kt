@@ -1,32 +1,18 @@
 package com.fanhl.recycledviewpooldemo
 
-import com.chad.library.adapter.base.BaseMultiItemQuickAdapter
+import android.view.View
+import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
-import com.chad.library.adapter.base.entity.MultiItemEntity
 
-class MainAdapter : BaseMultiItemQuickAdapter<MultiItemEntity, BaseViewHolder>(null) {
-    init {
-        addItemType(ITEM_TYPE_QUESTION_VIDEO_VOTING, R.layout.item_main)
-    }
+class MainAdapter : BaseQuickAdapter<Post, MainAdapter.ViewHolder>(R.layout.item_main) {
 
-    override fun convert(helper: BaseViewHolder?, item: MultiItemEntity?) {
+    override fun convert(helper: MainAdapter.ViewHolder?, item: Post?) {
 
     }
 
-    companion object {
-        const val ITEM_TYPE_QUESTION_VIDEO_VOTING = 1
-    }
+    class ViewHolder(itemView: View) : BaseViewHolder(itemView) {
+        init {
 
-    /**
-     * @param type 当前itemView的类型
-     */
-    class MainItem(
-        val type: Int,
-        val data: Post
-    ) : MultiItemEntity {
-
-        override fun getItemType(): Int {
-            return type
         }
     }
 }

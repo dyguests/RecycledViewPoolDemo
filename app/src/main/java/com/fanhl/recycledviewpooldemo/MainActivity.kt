@@ -42,14 +42,6 @@ class MainActivity : BaseActivity() {
                 )
                 it.onComplete()
             }
-            .map {
-                it.map {
-                    MainAdapter.MainItem(
-                        MainAdapter.ITEM_TYPE_QUESTION_VIDEO_VOTING,
-                        it
-                    )
-                }
-            }
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe {
