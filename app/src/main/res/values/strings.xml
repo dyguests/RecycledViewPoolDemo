@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">RecycledViewPoolDemo</string>
     <string name="linear_layout_manager">android.support.v7.widget.LinearLayoutManager</string>
+    <string name="grid_layout_manager">android.support.v7.widget.GridLayoutManager</string>
     <string name="name">Name</string>
     <string name="location">Location</string>
     <string name="title">Title</string>

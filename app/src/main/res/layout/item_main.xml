@@ -17,5 +17,7 @@
         <include layout="@layout/partial_item_video"/>
 
         <include layout="@layout/partial_item_image"/>
+
+        <include layout="@layout/partial_item_images"/>
     </LinearLayout>
 </android.support.v7.widget.CardView>
